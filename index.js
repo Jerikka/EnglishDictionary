@@ -9,6 +9,7 @@ const audioEl = document.getElementById("audio");
 async function fetchAPI(word) {
     try {
         infoTextEl.style.display = "block";
+        meaningContainer.style.display = "none";
 
         infoTextEl.innerText = `Searching the meaning of ${word}`;
         const APIURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
